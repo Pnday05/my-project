@@ -243,7 +243,9 @@ HIGHLIGHTS
 
 .highlight__wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-bottom:24px ; /* left off to work on later */
 }
 
 .highlight {
