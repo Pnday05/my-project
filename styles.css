@@ -132,6 +132,7 @@ LANDING
     top: 10px;
     padding: 8px;
     color: white;
+    display: none;
 }
 
 #landing {
@@ -184,7 +185,6 @@ button:active {
     font-size: 20px;
     border-radius: 4px;
     border: none;
-    display: none;
 }
 
 .header__img--wrapper {
@@ -243,6 +243,7 @@ HIGHLIGHTS
 
 .highlight__wrapper {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .highlight {
@@ -250,7 +251,6 @@ HIGHLIGHTS
     width: calc(100% / 3);
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
@@ -275,6 +275,7 @@ HIGHLIGHTS
 .highlight__subtitle {
     font-size: 20px;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 /* 
@@ -410,6 +411,30 @@ footer {
     padding: 0 8px;
 }
 
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES*/
+@media (max-width: 768px) {
+    .header__description {
+        padding: 0 24px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .button {
+        font-size: 18px;
+    }
+
+    .book {
+        width: 20%;
+    }
+}
+
+/* SMALL PHNES, LARGE SMARTPHONES */
 a {
     text-decoration: none;
 }
@@ -426,5 +451,9 @@ a:hover {
     .btn__menu {
         display: flex;
 
+    }
+
+    .highlight {
+        width: 100%;
     }
 }
