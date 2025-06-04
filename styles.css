@@ -59,6 +59,7 @@ li {
  color: #7342d6;
  font-weight: bold;
  padding: 8px;
+ cursor: not-allowed;
 }
 
 .nav__link--primary {
@@ -392,6 +393,7 @@ footer {
 .footer__logo--img {
     width: 160px;
     filter: grayscale(1) invert(1);
+    padding: 20px;
 }
 
 .footer__link,
@@ -407,10 +409,15 @@ footer {
 
 .footer__list {
     margin-bottom: 24px 0 24px 0;
+    scroll-behavior: smooth;
 }
 
 .footer__link {
     padding: 0 8px;
+}
+
+.footer__copyright {
+    padding: 20px;
 }
 
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES*/
